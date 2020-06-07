@@ -1,0 +1,237 @@
+:root {
+  --hero: #ffffff;
+  --hero-fone: rgba(47, 48, 58, 0.8);
+  --text-title-color: #212121;
+  --text-title-dark-fone: #ffffff;
+  --text-body-color: #757575;
+  --text-social-links: #afb1b8;
+  --text-header-hover-focus: #2196f3;
+  --logo-color-web: #2196f3;
+  --logo-color-studio: #000000;
+  --nav-header-hover-focus: #2196f3;
+  --text-button-primary: #ffffff;
+  --button-primary-background: #2196f3;
+  --text-button-secondary: #212121;
+  --button-secondary-background: #f5f4fa;
+  --button-secondary-hover-focus: #ffffff;
+  --button-secondary-hover-focus-background: #2196f3;
+  --background-studio: #ffffff;
+  --background-text-card: rgba(33, 150, 243, 0.9);
+  --background-footer: #2f303a;
+  --text-adress-footer: rgba(255, 255, 255, 0.6);
+  --text-footer: #ffffff;
+  --text-after-footer: rgba(255, 255, 255, 0.4);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.link > .button-secondary {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+/*Логотип*/
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-one {
+  left: 215px;
+  color: var(--logo-color-web);
+}
+.logo-two {
+  left: 285px;
+  color: var(--logo-color-studio);
+}
+
+/*Header*/
+header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contact {
+  color: var(--text-body-color);
+}
+.contact:hover,
+.contact:focus {
+  color: var(--text-header-hover-focus);
+}
+.nav {
+  color: var(--text-title-color);
+}
+.nav:hover,
+.nav:focus {
+  color: var(--text-header-hover-focus);
+}
+
+main {
+  letter-spacing: 0.03em;
+}
+/*Заголовки Студия*/
+
+.hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hero);
+  text-align: center;
+}
+
+.fone {
+  background: var(--hero-fone);
+}
+
+/*Общие заголовки*/
+
+.hero-two {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--text-title-color);
+}
+
+.hero-three {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+}
+
+.hero-three-else {
+  color: var(--text-title-dark-fone);
+  background: var(--hero-fone);
+}
+
+.else-color-hero {
+  color: var(--text-title-color);
+}
+
+.text-p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  color: var(--text-body-color);
+}
+/* Студия соц.сети */
+.social-links {
+  color: var(--text-social-links);
+}
+.social-links:hover,
+.social-links:focus {
+  color: var(--text-header-hover-focus);
+}
+/*Портфолио*/
+.name {
+  font-size: 16px;
+  line-height: 1.19px;
+  /* identical to box height 
+text-align: center;*/
+}
+.name-color {
+  font-weight: 500;
+  color: var(--text-title-color);
+}
+.profesion {
+  font-weight: 400;
+  color: var(--text-body-color);
+}
+.invisible {
+  display: none;
+}
+.text-card {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  /* or 156% */
+  color: var(--text-title-dark-fone);
+  background: var(--background-text-card);
+}
+.hero-text-card {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: var(--text-title-color);
+}
+.p-card {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  color: var(--text-body-color);
+}
+
+/*Кнопки*/
+
+.button-primary {
+  color: var(--text-button-primary);
+  background-color: var(--button-primary-background);
+  letter-spacing: 0.06;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.button-secondary {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+  color: var(--text-button-secondary);
+  background-color: var(--button-secondary-background);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  color: var(--button-secondary-hover-focus);
+  background-color: var(--button-secondary-hover-focus-background);
+}
+
+/*Footer*/
+footer {
+  background: var(--background-footer);
+  color: var(--text-footer);
+}
+.contact-footer {
+  color: var(--text-adress-footer);
+}
+.adress-footer {
+  font-style: normal;
+}
+.social-link {
+  color: var(--text-footer);
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--text-header-hover-focus);
+}
+
+/* Подпись внизу футера*
+.after {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: var(--text-after-footer);
+}*/
