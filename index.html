@@ -8,345 +8,475 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/modern-normalize.css" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Document</title>
   </head>
 
   <body>
     <!-- Шапка страницы -->
-    <header>
-      <nav>
-        <a href="./"
-          ><span class="logo logo-one">Web</span
-          ><span class="logo logo-two">Studio</span></a
-        >
-        <ul>
-          <li>
-            <a href="./index.html" class="nav">Студия</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="nav">Портфолио</a>
-          </li>
-          <li><a href="" class="nav">Контакты</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <nav class="main-nav">
+          <a href="./" class="logo"
+            ><span class="logo-one">Web</span
+            ><span class="logo-two">Studio</span></a
+          >
 
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact"
-            ><img src="./image/envelope(hover).svg" alt="иконка конверта" />
-            info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tell:+380961111111" class="contact"
-            ><img src="./image/smartphone.svg" alt="иконка телефона" />+38 096
-            111 11 11</a
-          >
-        </li>
-      </ul>
+          <ul class="list head-main">
+            <li class="item">
+              <a class="link nav" href="./index.html" >Студия</a>
+            </li>
+            <li class="item">
+               <a class="link nav" href="./portfolio.html" >Портфолио</a>
+            </li>
+            <li class="item">
+              <a class="link nav" href="" >Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list auth-nav">
+          <li class="item">
+            <a class="link auth-nav contact" href="mailto:info@devstudio.com" 
+              ><img src="./image/envelope(hover).svg" alt="иконка конверта" />
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a class="link auth-nav contact" href="tell:+380961111111" 
+              ><img src="./image/smartphone.svg" alt="иконка телефона" />+38 096
+              111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-      <section class="fone">
-        <img
-          src="./image/фон.jpg"
-          alt="фон заголовка"
-          width="1600"
-          height="600"
-        />
-        <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-        <a href=""
-          ><button type="button" class="button-primary">
-            Заказать услугу
-          </button></a
-        >
+      <section class="hero">       
+       
+      <div class="container hero-fone">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <a class="link" href=""
+            ><button type="button" class="button-primary">
+              Заказать услугу
+            </button>
+          </a>
+        </div>
       </section>
 
-      <section>
-        <!--Скрытый заголовок-->
-        <h2 class="invisible">Невидимый заголовок</h2>
-        <ul>
-          <li>
-            <a href=""
-              ><img src="./image/antenna.svg" alt="иконка антенны" />
-              <h3 class="hero-three else-color-hero">Внимание к деталям</h3>
-              <p class="text-p">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><img src="./image/clock.svg" alt="иконка будильника" />
-              <h3 class="hero-three else-color-hero">Пунктуальность</h3>
-              <p class="text-p">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><img src="./image/diagram.svg" alt="иконка диаграммы" />
-              <h3 class="hero-three else-color-hero">Планирование</h3>
-              <p class="text-p">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><img src="./image/astronaut.svg" alt="иконка астронавта" />
-              <h3 class="hero-three else-color-hero">Современные технологии</h3>
-              <p class="text-p">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p></a
-            >
-          </li>
-        </ul>
+      <section class="section not-paddig-bottom">
+        <div class="container">
+          <!--Скрытый заголовок-->
+          <h2 class="invisible">Невидимый заголовок</h2>
+          <ul class="list flex-container">
+            <li class="item">
+              <a class="link" href=""
+                ><div class="icon">
+                  <img src="./image/antenna.svg" alt="иконка антенны" />
+                </div>
+
+                <h3 class="hero-three else-color-hero">Внимание к деталям</h3>
+                <p class="text-p">
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p></a
+              >
+            </li>
+            <li class="item">
+              <a class="link" href=""
+                ><div class="icon">
+                  <img src="./image/clock.svg" alt="иконка будильника" />
+                </div>
+                <h3 class="hero-three else-color-hero">Пунктуальность</h3>
+                <p class="text-p">
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p></a
+              >
+            </li>
+            <li class="item">
+              <a class="link" href=""
+                ><div class="icon">
+                  <img src="./image/diagram.svg" alt="иконка диаграммы" />
+                </div>
+                <h3 class="hero-three else-color-hero">Планирование</h3>
+                <p class="text-p">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p></a
+              >
+            </li>
+            <li class="item">
+              <a class="link" href=""
+                ><div class="icon">
+                  <img src="./image/astronaut.svg" alt="иконка астронавта" />
+                </div>
+                <h3 class="hero-three else-color-hero">
+                  Современные технологии
+                </h3>
+                <p class="text-p">
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2 class="hero-two">Чем мы занимаемся</h2>
-        <ul>
-          <li>
-            <a href=""
-              ><img src="./image/ноут.jpg" alt="изображения ноутбука" />
-              <h3 class="hero-thre hero-three-else">
-                Десктопные приложения
-              </h3></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><img
-                src="./image/телефон.jpg"
-                alt="изображения мобильного телефона"
-              />
-              <h3 class="hero-thre hero-three-else">Мобильные приложения</h3></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><img src="./image/монитор.png" alt="изображения монитора" />
-              <h3 class="hero-thre hero-three-else">Дизайнерские решения</h3></a
-            >
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <h2 class="hero-two">Чем мы занимаемся</h2>
+
+          <ul class="list flex-container">
+            <li class="item primory-fone">
+              <a class="link" href=""
+                ><img src="./image/ноут.jpg" alt="изображения ноутбука" />
+                <h3 class="hero-three hero-three-else">
+                  Десктопные приложения
+                </h3></a
+              >
+            </li>
+            <li class="item primory-fone">
+              <a class="link" href=""
+                ><img
+                  src="./image/телефон.jpg"
+                  alt="изображения мобильного телефона"
+                />
+                <h3 class="hero-three hero-three-else">
+                  Мобильные приложения
+                </h3></a
+              >
+            </li>
+            <li class="item ">
+              <a class="link" href=""
+                ><img src="./image/монитор.png" alt="изображения монитора" />
+                <h3 class="hero-three hero-three-else primory-fone">
+                  Дизайнерские решения
+                </h3></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
+      <section class="section fone-section ">
+        <div class="container">
         <h2 class="hero-two">Наша команда</h2>
-        <ul>
-          <li>
-            <a href=""
-              ><img
-                src="./image/foto-1.jpg"
-                alt="фото сотрудника"
-                width="270"
-                height="260"
-              />
-              <h3 class="name name-color">Николай Кучеренко</h3>
-              <p lang="en" class="name profesion">Product Designer</p></a
-            >
-            <ul>
-              <li>
-                <a href="" aria-label="ссылка на Instagram" class="social-links"
-                  >Instagram</a
-                >
+        
+          <ul class="list flex-container friends">            
+              <li class="flex-element card">
+                <div >
+                <img
+                    src="./image/foto-1.jpg"
+                    alt="фото сотрудника"
+                    width="270"
+                    height="260"
+                  />
+              <div class="card-content">          
+                  <h3 class="name name-color">Николай Кучеренко</h3>
+                  <p lang="en" class="profesion">Product Designer</p>
+                <ul class="list flex-container social-icon">
+                  <li>
+                    <a
+                      class=" social-link"
+                      href=""
+                      aria-label="ссылка на Instagram"
+                      
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="link social-link"
+                      href=""
+                      aria-label="ссылка на Twitter"
+                      
+                      >Twitter</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="link social-link"
+                      href=""
+                      aria-label="ссылка на Facebook"
+                      
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="link social-link"
+                      href=""
+                      aria-label="ссылка на IN"
+                     
+                      >IN</a
+                    >
+                  </li>
+                </ul>
+                </div>
+                </div>
               </li>
-              <li>
-                <a href="" aria-label="ссылка на Twitter" class="social-links"
-                  >Twitter</a
-                >
-              </li>
-              <li>
-                <a href="" aria-label="ссылка на Facebook" class="social-links"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a href="" aria-label="ссылка на IN" class="social-links">IN</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="" class="link"
-              ><img
-                src="./image/foto-2.jpg"
-                alt="фото сотрудника"
-                width="270"
-                height="260"
-              />
-              <h3 class="name name-color">Ольга Иванова</h3>
-              <p lang="en" class="name profesion">Frontend Developer</p></a
-            >
-            <ul>
-              <li>
-                <a href="" aria-label="ссылка на Instagram" class="social-links"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a href="" aria-label="ссылка на Twitter" class="social-links"
-                  >Twitter</a
-                >
-              </li>
-              <li>
-                <a href="" aria-label="ссылка на Facebook" class="social-links"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a href="" aria-label="ссылка на IN" class="social-links">IN</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href=""
-              ><img
-                src="./image/foto-3.jpg"
-                alt="фото сотрудника"
-                width="270"
-                height="260"
-              />
-              <h3 class="name name-color">Андрей Шевченко</h3>
-              <p lang="en" class="name profesion">Marketing</p></a
-            >
-            <ul>
-              <li>
-                <a href="" aria-label="ссылка на Instagram" class="social-links"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a href="" aria-label="ссылка на Twitter" class="social-links"
-                  >Twitter</a
-                >
-              </li>
-              <li>
-                <a href="" aria-label="ссылка на Facebook" class="social-links"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a href="" aria-label="ссылка на IN" class="social-links">IN</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href=""
-              ><img
-                src="./image/foto-4.jpg"
-                alt="фото сотрудника"
-                width="270"
-                height="260"
-              />
-              <h3 class="name name-color">Иван Николаев</h3>
-              <p lang="en" class="name profesion">UI Designer</p></a
-            >
-            <ul>
-              <li>
-                <a href="" aria-label="ссылка на Instagram" class="social-links"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a href="" aria-label="ссылка на Twitter" class="social-links"
-                  >Twitter</a
-                >
-              </li>
-              <li>
-                <a href="" aria-label="ссылка на Facebook" class="social-links"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a href="" aria-label="ссылка на IN" class="social-links">IN</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+            
+            <li class="flex-element card">
+              <div>
+              <img
+                  src="./image/foto-2.jpg"
+                  alt="фото сотрудника"
+                  width="270"
+                  height="260"
+                />
+                <div class="card-content">
+                <h3 class="name name-color">Ольга Иванова</h3>
+                <p lang="en" class="name profesion">Frontend Developer</p>
+              <ul class="list flex-container social-icon">
+                <li>
+                  <a
+                    class="link social-link"
+                    href=""
+                    aria-label="ссылка на Instagram"
+                    
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link social-link"
+                    href=""
+                    aria-label="ссылка на Twitter"
+                    
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link social-link"
+                    href=""
+                    aria-label="ссылка на Facebook"
+                    
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link social-link"
+                    href=""
+                    aria-label="ссылка на IN"
+                    
+                    >IN</a
+                  >
+                </li>
+              
+              </ul>
+              </div>
+              </div>
+            </li>
+            
+            <li class="flex-element card">
+              <div>
+              <img
+                  src="./image/foto-3.jpg"
+                  alt="фото сотрудника"
+                  width="270"
+                  height="260"
+                />
+                <div class="card-content">
+                <h3 class="name name-color">Андрей Шевченко</h3>
+                <p lang="en" class="name profesion">Marketing</p>
+              <ul class="list flex-container social-icon">
+                <li>
+                  <a
+                    class="link social-link"
+                    href=""
+                    aria-label="ссылка на Instagram"
+                    
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link social-link"
+                    href=""
+                    aria-label="ссылка на Twitter"
+                    
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link social-link"
+                    href=""
+                    aria-label="ссылка на Facebook"
+                    
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link social-link"
+                    href=""
+                    aria-label="ссылка на IN"
+                    
+                    >IN</a
+                  >
+                </li>
+              </ul>
+              </div>
+            </div>
+            </li>
+            <li class="flex-element">
+              <div class="card">
+              <img
+                  src="./image/foto-4.jpg"
+                  alt="фото сотрудника"
+                  width="270"
+                  height="260"
+                />
+                <div class="card-content">
+                <h3 class="name name-color">Иван Николаев</h3>
+                <p lang="en" class="name profesion">UI Designer</p>
+              <ul class="list flex-container social-icon">
+               
+                <li>
+                  <a
+                    class="link social-link"
+                    href=""
+                    aria-label="ссылка на Instagram"
+                    
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link social-link"
+                    href=""
+                    aria-label="ссылка на Twitter"
+                    
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link social-link"
+                    href=""
+                    aria-label="ссылка на Facebook"
+                    
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link social-link"
+                    href=""
+                    aria-label="ссылка на IN"
+                    
+                    >IN</a
+                  >
+                </li>
+                
+              </ul>
+            </li>
+          </div>
+        </div>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2 class="hero-two">Постоянные клиенты</h2>
+      <section class="section">
+        <div class="container">
+          <h2 class="hero-two title-client">Постоянные клиенты</h2>
 
-        <ul>
-          <li>
-            <a href=""><img src="./image/logo-1.svg" alt="ya and co" /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="./image/logo-2.svg" alt="company tagline here"
-            /></a>
-          </li>
-          <li>
-            <a href=""><img src="./image/logo-3.svg" alt="company" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./image/logo-4.svg" alt="foster peters" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./image/logo-5.svg" alt="brand" /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="./image/logo-6.svg" alt="company tag line"
-            /></a>
-          </li>
-        </ul>
+          <ul class="flex-container partner">
+            <li class="item">
+              <a class="link" href=""
+                ><img src="./image/logo-1.svg" alt="ya and co"
+              /></a>
+            </li>
+            <li class="item">
+              <a class="link" href=""
+                ><img src="./image/logo-2.svg" alt="company tagline here"
+              /></a>
+            </li>
+            <li class="item">
+              <a class="link" href=""
+                ><img src="./image/logo-3.svg" alt="company"
+              /></a>
+            </li>
+            <li class="item">
+              <a class="link" href=""
+                ><img src="./image/logo-4.svg" alt="foster peters"
+              /></a>
+            </li>
+            <li class="item">
+              <a class="link" href=""
+                ><img src="./image/logo-5.svg" alt="brand"
+              /></a>
+            </li>
+            <li class="item">
+              <a class="link" href=""
+                ><img src="./image/logo-6.svg" alt="company tag line"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- Подвал страницы -->
-    <footer>
-      <!-- Логотип -->
-      <a href="./"
-        ><span class="logo logo-one">Web</span
-        ><span class="logo logo-two">Studio</span></a
-      >
-      <!--Контакты-->
-      <address>
-        <p class="adress-footer">г. Киев, пр-т Леси Украинки, 26</p>
-        <ul>
+    <footer class="page-footer">
+      <div class="container flex-container">
+        <!-- Логотип -->
+        <div class="footer-block">
+        <a href="./" class="link logo logo-footer"
+          ><span class="logo-one">Web</span
+          ><span class="logo-two-footer">Studio</span></a
+        >
+        <!--Контакты-->
+        <address>
+          <p>г. Киев, пр-т Леси Украинки, 26</p>
+          <ul class="list">
+            <li>
+              <a class="contact-footer link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a href="tell:+380991111111" class="contact-footer link"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>      
+        <!-- Ссылки на соцсети -->
+      <div class="footer-block">
+        <h3>Присоединяйтесь</h3>
+        <ul class="list flex-container">
           <li>
-            <a
-              href="mailto:info@example.com"
-              class="adress-footer contact-footer"
-              >info@example.com</a
+            <a href="" aria-label="ссылка на Instagram" class="link footer-social-link"
+              >Instagram</a
             >
           </li>
           <li>
-            <a href="tell:+380991111111" class="adress-footer contact-footer"
-              >+38 099 111 11 11</a
+            <a href="" aria-label="ссылка на Twitter" class="link footer-social-link"
+              >Twitter</a
             >
+          </li>
+          <li>
+            <a href="" aria-label="ссылка на Facebook" class="link footer-social-link"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a href="" aria-label="ссылка на IN" class="link footer-social-link">IN</a>
           </li>
         </ul>
-      </address>
-      <!-- Ссылки на соцсети -->
-      <h3>Присоединяйтесь</h3>
-      <ul>
-        <li>
-          <a href="" aria-label="ссылка на Instagram" class="social-link"
-            >Instagram</a
-          >
-        </li>
-        <li>
-          <a href="" aria-label="ссылка на Twitter" class="social-link"
-            >Twitter</a
-          >
-        </li>
-        <li>
-          <a href="" aria-label="ссылка на Facebook" class="social-link"
-            >Facebook</a
-          >
-        </li>
-        <li><a href="" aria-label="ссылка на IN" class="social-link">IN</a></li>
-      </ul>
-      <h3>Подпишитесь на рассылку</h3>
-      <h3><button type="button" class="button-primary">Подписаться</button></h3>
+        </div>
+
+        <div class="footer-block">
+          <h3>Подпишитесь на рассылку</h3>
+          <h3>
+            <button type="button" class="button-primary">Подписаться</button>
+          </h3>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

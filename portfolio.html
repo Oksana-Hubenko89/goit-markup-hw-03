@@ -8,47 +8,60 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/modern-normalize.css" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Document</title>
   </head>
 
   <body>
     <!-- Шапка страницы -->
-    <header>
-      <nav>
-        <a href="./"><span class="logo logo-one">Web</span><span class="logo logo-two">Studio</span></a>
-        <ul class="nav-oll">
-          <li><a href="./index.html" class="nav"> Студия </a></li>
-          <li><a href="./portfolio.html" class="nav"> Портфолио </a></li>
-          <li><a href="" class="nav"> Контакты </a></li>
+    <header class="header">
+      <div class="container">
+        <nav class="main-nav">
+          <a href="./" class="logo"><span class="logo-one">Web</span><span class="logo-two">Studio</span></a>
+    
+          <ul class="list head-main">
+            <li class="item">
+              <a class="link nav" href="./index.html">Студия</a>
+            </li>
+            <li class="item">
+              <a class="link nav" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item">
+              <a class="link nav" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list auth-nav">
+          <li class="item">
+            <a class="link auth-nav contact" href="mailto:info@devstudio.com"><img src="./image/envelope(hover).svg"
+                alt="иконка конверта" />
+              info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a class="link auth-nav contact" href="tell:+380961111111"><img src="./image/smartphone.svg"
+                alt="иконка телефона" />+38 096
+              111 11 11</a>
+          </li>
         </ul>
-      </nav>
-  
-      <ul class="nav-oll">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact"><img src="./image/envelope(hover).svg"
-              alt="иконка конверта" />
-            info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tell:+380961111111" class="contact"><img src="./image/smartphone.svg" alt="иконка телефона" />+38 096
-            111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="section section-portfolio ">
+        <div class="container">
        <h1 class="invisible">Портфолио</h1>
-      <ul>
-        <li><a href=""><button type="button" class="button-secondary">Все</button></a></li>
-        <li><a href=""><button type="button" class="button-secondary">Веб-сайты</button</a></li>
-        <li><a href=""><button type="button" class="button-secondary">Приложения</button></a></li>
-        <li><a href=""><button type="button" class="button-secondary">Дизайн</button></a></li>
-        <li><a href=""><button type="button" class="button-secondary">Маркетинг</button></a></li>
-      </ul>
-      <ul>
-        <li>
+      <ul class="list ">
+        <div class="flex-container filtr">
+        <li class="item-filtr"><a href=""><button type="button" class="button-secondary">Все</button></a></li>
+        <li class="item-filtr"><a href=""><button type="button" class="button-secondary">Веб-сайты</button</a></li>
+        <li class="item-filtr"><a href=""><button type="button" class="button-secondary">Приложения</button></a></li>
+        <li class="item-filtr"><a href=""><button type="button" class="button-secondary">Дизайн</button></a></li>
+        <li class="item-filtr"><a href=""><button type="button" class="button-secondary">Маркетинг</button></a></li>
+      </div>
+    </ul>
+    <ul class="list">
+        <div class="filtr-oll">
+        <li class="oll">
           <a href="">
             <img src="./image/tehnokryak.jpg" alt="Технокряк">
               <p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -57,7 +70,7 @@
               <p class="p-card">Веб-сайт</p>
           </a>
         </li>
-        <li>
+        <li class="oll">
           <a href="">
             <img src="./image/poster.jpg" alt="Постер New Orlean vs Golden Star">
               <p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -66,7 +79,7 @@
               <p class="p-card">Дизайн</p>
           </a>
         </li>
-        <li>
+        <li class="oll">
           <a href="">
             <img src="./image/restoran.jpg" alt="Ресторан Seafood">
               <p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -75,7 +88,7 @@
               <p class="p-card">Приложение</p>
           </a>
         </li>
-        <li>
+        <li class="oll">
           <a href="">
             <img src="./image/Проект-Prime.jpg" alt="Проект Prime">
               <p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -84,7 +97,7 @@
               <p class="p-card">Маркетинг</p>
           </a>
         </li>
-        <li>
+        <li class="oll">
           <a href="">
             <img src="./image/Проект-Boxes.jpg" alt="Проект Boxes">
               <p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -93,7 +106,7 @@
               <p class="p-card">Приложение</p>
           </a>
         </li>
-        <li>
+        <li class="oll">
           <a href="">
             <img src="./image/монитор.png" alt="Inspiration has no Borders">
               <p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -102,7 +115,7 @@
               <p class="p-card">Веб-сайт</p>
           </a>
         </li>
-        <li>
+        <li class="oll">
           <a href="">
             <img src="./image/Издание-Limited-Edition.jpg" alt="Издание Limited Edition">
               <p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -111,7 +124,7 @@
               <p class="p-card">Дизайн</p>
           </a>
         </li>
-        <li>
+        <li class="oll">
           <a href="" >
             <img src="./image/Проект-LAB.jpg" alt="Проект LAB">
               <p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -120,7 +133,7 @@
               <p class="p-card">Маркетинг</p>
           </a>
         </li>
-        <li>
+        <li class="oll">
           <a href="">
             <img src="./image/ноут.jpg" alt="Growing Business">
               <p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -129,43 +142,59 @@
               <p class="p-card">Приложение</p>
           </a>
         </li>
+        </div>
       </ul>
+      </div>
       </section>
 
     </main>
 
     <!-- Подвал страницы -->
-    <footer>
-      <!-- Логотип -->
-      <a href="./"><span class="logo logo-one">Web</span><span class="logo logo-two">Studio</span></a>
-      <!--Контакты-->
-      <address>
-        <p class="adress-footer">г. Киев, пр-т Леси Украинки, 26</p>
-        <ul>
-          <li>
-            <a href="mailto:info@example.com" class="adress-footer contact-footer">info@example.com</a>
-          </li>
-          <li>
-            <a href="tell:+380991111111" class="adress-footer contact-footer">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
-      <!-- Ссылки на соцсети -->
-      <h3>Присоединяйтесь</h3>
-    <ul>
-      <li>
-        <a href="" aria-label="ссылка на Instagram" class="social-link">Instagram</a>
-      </li>
-      <li>
-        <a href="" aria-label="ссылка на Twitter" class="social-link">Twitter</a>
-      </li>
-      <li>
-        <a href="" aria-label="ссылка на Facebook" class="social-link">Facebook</a>
-      </li>
-      <li><a href="" aria-label="ссылка на IN" class="social-link">IN</a></li>
-    </ul>
-      <h3>Подпишитесь на рассылку</h3>
-      <h3><button type="button" class="button-primary">Подписаться</button></h3>
+    <footer class="page-footer">
+      <div class="container flex-container">
+        <!-- Логотип -->
+        <div class="footer-block">
+          <a href="./" class="link logo logo-footer"><span class="logo-one">Web</span><span
+              class="logo-two-footer">Studio</span></a>
+          <!--Контакты-->
+          <address>
+            <p>г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="list">
+              <li>
+                <a class="contact-footer link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li>
+                <a href="tell:+380991111111" class="contact-footer link">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Ссылки на соцсети -->
+        <div class="footer-block">
+          <h3>Присоединяйтесь</h3>
+          <ul class="list flex-container">
+            <li>
+              <a href="" aria-label="ссылка на Instagram" class="link footer-social-link">Instagram</a>
+            </li>
+            <li>
+              <a href="" aria-label="ссылка на Twitter" class="link footer-social-link">Twitter</a>
+            </li>
+            <li>
+              <a href="" aria-label="ссылка на Facebook" class="link footer-social-link">Facebook</a>
+            </li>
+            <li>
+              <a href="" aria-label="ссылка на IN" class="link footer-social-link">IN</a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="footer-block">
+          <h3>Подпишитесь на рассылку</h3>
+          <h3>
+            <button type="button" class="button-primary">Подписаться</button>
+          </h3>
+        </div>
+      </div>
     </footer>
     </body>
     
